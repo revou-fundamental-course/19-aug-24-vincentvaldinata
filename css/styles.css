@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-icon {
+  height: 48px;
+  width: 48px;
+  background-image: url("https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png");
+  background-size: cover;
+}
+.nav-item {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid;
+  color: black;
+  font-weight: bold;
+}
+.banner-img {
+  height: 400px;
+  border: 1px solid;
+  background-image: url("https://journal.revou.co/content/images/2022/10/10072022---Journal-Refresh-Banner-Kenalan.png");
+  background-size: contain;
+  background-position: center;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-item {
+  height: 100px;
+  text-align: -webkit-center;
+}
+.profile-img {
+  height: 50px;
+  width: 50px;
+  background-image: url("https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png");
+  background-size: cover;
+  background-position: center;
+}
