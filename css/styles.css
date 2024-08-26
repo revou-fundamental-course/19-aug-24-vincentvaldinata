@@ -41,3 +41,25 @@ nav {
   background-size: cover;
   background-position: center;
 }
+.form-container {
+  height: 300px;
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+
+}
+.form {
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+}
+.form-appear {
+  width: 500px;
+  height: 200px;
+  border: 1px solid;
+}
+footer{
+  text-align: end;
+}
