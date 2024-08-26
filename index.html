@@ -45,12 +45,61 @@
           </div>
         </section>
       </section>
-      <hr>
+      <hr />
       <section>
-        <form action=""></form>
-        <div></div>
+        <header>
+          <h2>Message Us</h2>
+        </header>
+        <div class="form-container">
+          <form action="" method="get" class="form">
+            <table>
+              <tr>
+                <td><label for="name">Nama Lengkap : </label></td>
+                <td><input type="text" name="name" placeholder="nama" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="tgl-lhr">Tanggal Lahir : </label>
+                </td>
+                <td><input type="date" name="tgl-lhr" /></td>
+              </tr>
+              <tr>
+                <td><label for="jenis-kelamin">Jenis Kelamin : </label></td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="jenis-kelamin"
+                      value="laki-laki"
+                    />Laki-Laki</label
+                  >
+                </td>
+                <td>
+                  <label
+                    ><input
+                      type="radio"
+                      name="jenis-kelamin"
+                      value="perempuan"
+                    />Perempuan</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><label for="pesan">Pesan : </label></td>
+                <td><textarea name="pesan"></textarea></td>
+              </tr>
+              <tr>
+                <td><input type="submit" name="submit" value="Submit" /></td>
+              </tr>
+            </table>
+          </form>
+          <div class="form-appear"></div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <hr />
+    <footer>
+      <p>Created by Vincent Valdinata</p>
+    </footer>
   </body>
 </html>
