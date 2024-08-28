@@ -3,101 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>School Profile</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav>
-      <header>
-        <div class="logo-icon"></div>
-      </header>
-      <section>
-        <a href="#" class="nav-item">Home</a>
-        <a href="#" class="nav-item">Our Profile</a>
-        <a href="#" class="nav-item">Achivement</a>
-        <a href="#" class="nav-item">Message Us</a>
-      </section>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#vision-mission">Vision & Mission</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
     </nav>
-    <hr />
-    <main>
-      <article>
-        <h1>Welcome user to our website</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <div class="banner-img"></div>
-      </article>
-      <hr />
-      <section>
-        <header>
-          <h2>Our Facilities</h2>
-        </header>
-        <section class="profile-container">
-          <div class="profile-item">
-            <div class="profile-img"></div>
-            <h2>Web Development</h2>
-          </div>
-          <div class="profile-item">
-            <div class="profile-img"></div>
-            <h2>Android Developer</h2>
-          </div>
-          <div class="profile-item">
-            <div class="profile-img"></div>
-            <h2>Digital Marketing</h2>
-          </div>
-        </section>
-      </section>
-      <hr />
-      <section>
-        <header>
-          <h2>Message Us</h2>
-        </header>
-        <div class="form-container">
-          <form action="" method="get" class="form">
-            <table height="200px" width="500px">
-              <tr>
-                <td><label for="name">Nama Lengkap : </label></td>
-                <td><input type="text" name="name" placeholder="Nama Lengkap" /></td>
-              </tr>
-              <tr>
-                <td>
-                  <label for="tgl-lhr">Tanggal Lahir : </label>
-                </td>
-                <td><input type="date" name="tgl-lhr" /></td>
-              </tr>
-              <tr>
-                <td><label for="jenis-kelamin">Jenis Kelamin : </label></td>
-                <td>
-                  <label
-                    ><input
-                      type="radio"
-                      name="jenis-kelamin"
-                      value="laki-laki"
-                    />Laki-Laki</label
-                  >
-                  <label
-                    ><input
-                      type="radio"
-                      name="jenis-kelamin"
-                      value="perempuan"
-                    />Perempuan</label
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td><label for="pesan">Pesan : </label></td>
-                <td><textarea name="pesan" size="50"></textarea></td>
-              </tr>
-              <tr>
-                <td colspan="2"><input type="submit" name="submit" value="Submit" /></td>
-              </tr>
-            </table>
-          </form>
-          <div class="form-appear"></div>
-        </div>
-      </section>
-    </main>
-    <hr />
-    <footer>
-      <p>Created by Vincent Valdinata</p>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome to [Nama Sekolah]</h1>
+        <p>Empowering the Future through Quality Education</p>
+        <a href="#profile" class="cta-button">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="profile" class="about-section">
+      <h2>About Our School</h2>
+      <p>
+        Didirikan pada tahun [tahun berdiri], [Nama Sekolah] telah menjadi
+        pelopor dalam menyediakan pendidikan berkualitas tinggi yang
+        mempersiapkan siswa untuk masa depan yang cerah.
+      </p>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section id="vision-mission" class="vision-mission-section">
+      <h2>Vision & Mission</h2>
+      <h3>Vision</h3>
+      <p>
+        Menjadi lembaga pendidikan yang unggul dalam membentuk karakter dan
+        kompetensi siswa untuk menghadapi tantangan global.
+      </p>
+      <h3>Mission</h3>
+      <ul>
+        <li>Menyediakan lingkungan belajar yang inspiratif dan inovatif.</li>
+        <li>
+          Membangun karakter siswa yang berintegritas dan bertanggung jawab.
+        </li>
+        <li>
+          Mengembangkan kompetensi siswa sesuai dengan kebutuhan dunia kerja
+          masa depan.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <h2>Message Us</h2>
+      <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Nomor Telepon:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        Contact Info: [Nama Sekolah], [Alamat Sekolah], [Nomor Telepon], [Email]
+      </p>
+      <p>© [Tahun] [Nama Sekolah]. All Rights Reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
