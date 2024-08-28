@@ -77,6 +77,33 @@ body {
   line-height: 1.6;
   text-align: center;
 }
+/* Styling for the Gallery in About Section */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    max-width: 90%;
+    margin-bottom: 15px;
+  }
+}
 
 /* Vision & Mission Section */
 .vision-mission-section {
@@ -95,7 +122,8 @@ body {
   margin-bottom: 10px;
 }
 
-.vision-mission-section p, .vision-mission-section ul {
+.vision-mission-section p,
+.vision-mission-section ul {
   max-width: 800px;
   margin: 0 auto;
   font-size: 18px;
@@ -140,7 +168,9 @@ form label {
   font-size: 18px;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -172,55 +202,62 @@ form button:hover {
 /* Responsive Styles (for tablets and smaller devices) */
 @media (max-width: 768px) {
   .navbar ul {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-section h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
   .hero-section p {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .cta-button {
-      font-size: 16px;
+    font-size: 16px;
   }
 
-  .about-section, .vision-mission-section, .contact-section {
-      padding: 30px 10px;
+  .about-section,
+  .vision-mission-section,
+  .contact-section {
+    padding: 30px 10px;
   }
 
   .form-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  form, #submittedData {
-      width: 100%;
+  form,
+  #submittedData {
+    width: 100%;
   }
 
-  form label, form input, form textarea {
-      font-size: 16px;
+  form label,
+  form input,
+  form textarea {
+    font-size: 16px;
   }
 }
 
 /* Responsive Styles (for mobile phones) */
 @media (max-width: 480px) {
   .navbar ul li a {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .hero-section h1 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .cta-button {
-      font-size: 14px;
-      padding: 8px 16px;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 
-  form label, form input, form textarea {
-      font-size: 14px;
+  form label,
+  form input,
+  form textarea {
+    font-size: 14px;
   }
 }

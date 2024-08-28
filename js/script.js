@@ -12,4 +12,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   document.getElementById('display-email').textContent = email;
   document.getElementById('display-phone').textContent = phone;
   document.getElementById('display-message').textContent = message;
+
+  //change name in hero section
+  document.getElementById('user').textContent = name;
+
 });
